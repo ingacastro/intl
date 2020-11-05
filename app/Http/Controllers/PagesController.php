@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Mail\MailContactanos;
+use Mail;
 
 class PagesController extends Controller
 {
@@ -13,7 +15,6 @@ class PagesController extends Controller
             $productos = $query->where('number', 'like', "%".$request->input('number')."%")
             ->orWhere('short_description', 'like', "%".$request->input('number')."%")
             ->orWhere('large_description', 'like', "%".$request->input('number')."%");
-            
         $productos = $query->paginate(20);
         return view('index', compact('productos'));
     }
@@ -42,5 +43,19 @@ class PagesController extends Controller
 
     public function contacto(){
         return view('contacto');
+    }
+
+    public function contactanosMail(Request $request)
+    {
+        $contactanosCall = [
+            'nombre' => $request->Name,
+            'email' => $request->Email,
+            'telefono' => $request->Telephone,
+            'asunto' => $request->Subject,
+            'mensaje' => $request->Message
+        ];
+        Mail::to('ingacastro@gmail.com')->send(new MailContactanos($contactanosCall));
+        //return "Email enviado";
+        return back();
     }
 }
