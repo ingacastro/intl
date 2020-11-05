@@ -28,6 +28,8 @@ class MailContactanos extends Mailable
      */
     public function build()
     {
-        return $this->view('mail.contactanos_mail');
+        //var_dump($this->contactanosCall['location']);
+        return $this->view('mail.contactanos_mail')
+            ->attach($this->contactanosCall['location']);
     }
 }

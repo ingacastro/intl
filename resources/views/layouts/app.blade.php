@@ -18,6 +18,8 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<!-- js -->
+	<script src="{{ asset('js/jquery-1.11.1.min.js')}}"></script>
 </head>
 <body>
 	<div class="agileits_header">
@@ -91,6 +93,7 @@
 		<div class="clearfix"></div>
 	</div>
     @yield('content')
+	<script src="{{ asset('js/bootstrap.min.js')}}"></script>
     <div class="footer">
 		<div class="container">
 			<div class="col-md-3 w3_footer_grid">

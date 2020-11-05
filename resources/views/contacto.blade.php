@@ -19,7 +19,7 @@
                 </ul>
             </div>
             <div class="col-md-8 agileinfo_mail_grid_right">
-                <form action="{{route('enviar')}}" method="post">
+                <form action="{{route('enviar')}}" method="post" enctype="multipart/form-data">
                 @csrf
                     <div class="col-md-6 wthree_contact_left_grid">
                         <input type="text" name="Name" value="Nombre*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name*';}" required="">

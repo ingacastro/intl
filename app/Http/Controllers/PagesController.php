@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Mail\MailContactanos;
 use Mail;
+use Illuminate\Support\Facades\Storage;
 
 class PagesController extends Controller
 {
@@ -33,7 +34,11 @@ class PagesController extends Controller
     }
 
     public function producto($number){
-        $pieza = DB::table('supplies')->where('number', $number)->first();
+        $number = str_replace('\\', '/', $number);
+        $pieza = DB::table('supplies')
+            ->where('number', $number)
+            ->where('sync_connection_id', '=', '2')
+            ->first();
         return view('producto', compact('pieza'));
     }
 
@@ -47,13 +52,19 @@ class PagesController extends Controller
 
     public function contactanosMail(Request $request)
     {
+        $adjunto = $request->file;
+        //Storage::disk('local')->put($adjunto, 'Contents');
+        Storage::disk('local')->put($adjunto, file_get_contents($adjunto));
+        $location = storage_path("app/$adjunto");
         $contactanosCall = [
             'nombre' => $request->Name,
             'email' => $request->Email,
             'telefono' => $request->Telephone,
             'asunto' => $request->Subject,
-            'mensaje' => $request->Message
+            'mensaje' => $request->Message,
+            'location' => $location
         ];
+
         Mail::to('ingacastro@gmail.com')->send(new MailContactanos($contactanosCall));
         //return "Email enviado";
         return back();
