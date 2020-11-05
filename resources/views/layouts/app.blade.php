@@ -15,10 +15,13 @@
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+	
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
     <link rel="stylesheet" href="{{ asset('css/boostrap3.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-
+	
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -115,9 +118,9 @@
                     <ul class="agileits_social_icons">
                         <li><a href="https://www.facebook.com/International-Parts-893892907355420" target="_blank" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                         <li><a href="https://twitter.com/interparts5" target="_blank" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                        <li><a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li><a href="#" class="dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                        <li><a href="https://plus.google.com/109664838656190104383" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                        <!-- <li><a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#" class="dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li> -->
                     </ul>
                 </div>
 				<div class="clearfix"> </div>
