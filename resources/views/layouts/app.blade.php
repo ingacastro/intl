@@ -7,7 +7,10 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <!-- <title>{{ config('app.name', 'Laravel') }}</title> -->
+	{!! SEO::generate() !!}
+		
+	<!-- <title>International Parts</title> -->
     <link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 
@@ -33,7 +36,7 @@
 			</form>
 		</div>
 		<div class="w3l_header_right1">
-			<h2><a href="{{ route('contacto') }}">Contactanos</a></h2>
+			<h2><a href="{{ route('contacto') }}">Contáctanos</a></h2>
 		</div>
 		<div class="clearfix"> </div>
 	</div>

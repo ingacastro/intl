@@ -2,7 +2,8 @@
 @section('section__banner_right')
 <div class="agileinfo_single">
     <div class="col-md-4 agileinfo_single_left">
-        <img src="{{ asset('images/team.jpg') }}" alt="{{$pieza->number}}" class="img-responsive">
+        <!-- <img src="{{ asset('images/team.jpg') }}" alt="{{$pieza->number}}" class="img-responsive"> -->
+        <img src="{{ asset('images/sinimagen.jpg') }}" alt="" class="img-responsive">
     </div>
     <div class="col-md-8 agileinfo_single_right">
         <h5 style="margin: auto;">{{$pieza->number}}</h5>

@@ -18,7 +18,8 @@
                                         <div class="snipcart-item block">
                                             <div class="snipcart-thumb">
                                                 <a href="{{ route('pieza', ['number'=> Str::of($pieza->number)->trim()]) }}">
-                                                    <img src="{{ asset('images/team.jpg') }}" alt="" class="img-responsive">
+                                                    <!-- <img src="{{ asset('images/team.jpg') }}" alt="" class="img-responsive"> -->
+                                                    <img src="{{ asset('images/sinimagen.jpg') }}" alt="" class="img-responsive">
                                                 </a>
                                                 <h4 style="font-size: 1.1rem; margin: 10px 0;">{{$pieza->number}}</h4>
                                                 <p>{{Str::limit($pieza->short_description, 20)}}</p>
