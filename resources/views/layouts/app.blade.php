@@ -14,6 +14,7 @@
     <link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link rel="stylesheet" href="{{ asset('css/boostrap3.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
@@ -112,8 +113,8 @@
                 <div class="w3_footer_grid_bottom">
                     <h5>connect with us</h5>
                     <ul class="agileits_social_icons">
-                        <li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.facebook.com/International-Parts-893892907355420" target="_blank" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="https://twitter.com/interparts5" target="_blank" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                         <li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
                         <li><a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                         <li><a href="#" class="dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
