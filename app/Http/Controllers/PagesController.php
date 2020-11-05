@@ -24,7 +24,7 @@ class PagesController extends Controller
         SEO::opengraph()->setUrl('http://internationalparts.us');
         SEO::setCanonical('http://internationalparts.us');
         SEO::opengraph()->addProperty('type', 'articles');
-        SEO::twitter()->setSite('@intlparts');
+        SEO::twitter()->setSite('@interparts5');
 
         return view('index', compact('productos'));
     }
@@ -39,7 +39,7 @@ class PagesController extends Controller
         SEO::opengraph()->setUrl('http://internationalparts.us');
         SEO::setCanonical('http://internationalparts.us');
         SEO::opengraph()->addProperty('type', 'articles');
-        SEO::twitter()->setSite('@intlparts');
+        SEO::twitter()->setSite('@interparts5');
 
         return view('fabricantes', compact('fabricantes'));
     }
@@ -53,7 +53,7 @@ class PagesController extends Controller
         SEO::opengraph()->setUrl('http://internationalparts.us');
         SEO::setCanonical('http://internationalparts.us');
         SEO::opengraph()->addProperty('type', 'articles');
-        SEO::twitter()->setSite('@intlparts');
+        SEO::twitter()->setSite('@interparts5');
 
         return view('fabricante', compact('name', 'piezas'));
     }
@@ -81,7 +81,7 @@ class PagesController extends Controller
         SEO::opengraph()->setUrl('http://internationalparts.us');
         SEO::setCanonical('http://internationalparts.us');
         SEO::opengraph()->addProperty('type', 'articles');
-        SEO::twitter()->setSite('@intlparts');
+        SEO::twitter()->setSite('@interparts5');
         return view('quienes-somos');
     }
 
@@ -91,7 +91,7 @@ class PagesController extends Controller
         SEO::opengraph()->setUrl('http://internationalparts.us');
         SEO::setCanonical('http://internationalparts.us');
         SEO::opengraph()->addProperty('type', 'articles');
-        SEO::twitter()->setSite('@intlparts');
+        SEO::twitter()->setSite('@interparts5');
         return view('contacto');
     }
 
