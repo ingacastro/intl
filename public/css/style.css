@@ -996,10 +996,10 @@ ul.dropdown-menu.drp-mnu li a i {
 	padding-top: 7em;
 }
 .w3l_banner_nav_right_banner3{
-	background:url(/images/architecture.jpg) no-repeat 0px 0px;
+	background:url(/images/architecture.jpg) no-repeat center;
 	background-size:cover;
-	height: 100%;
-	-webkit-background-size:cover;
+	/* height: 100%; */
+	/* -webkit-background-size:cover; */
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	-ms-background-size:cover;
