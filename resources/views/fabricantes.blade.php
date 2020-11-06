@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('section__banner_right')
     <div class="w3l_banner_nav_right_banner3">
-        <h3>Mejores piezas con los mejores creditos</h3>
+        <h3>Mejores piezas con los mejores créditos</h3>
     </div>
 @endsection
 @section('content')

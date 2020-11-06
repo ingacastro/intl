@@ -6,7 +6,7 @@
             <div class="col-md-4 agileinfo_mail_grid_left">
                 <ul>
                     <li><i class="fa fa-home" aria-hidden="true"></i></li>
-                    <li>Direcciòn<span>México INTL. Parts de México S.A. de C.V. AV. Cristóbal Colón #4985. Int. Boreal #605
+                    <li>Dirección<span>México INTL. Parts de México S.A. de C.V. AV. Cristóbal Colón #4985. Int. Boreal #605
                         Col. Villas Colón Tlaquepaque 45601 Jalisco, México</li>
                 </ul>
                 <ul>

@@ -88,7 +88,7 @@
                         @foreach ($top10Fabricantes as $fabricante)
                             <li><a href="{{ route('fabricante', ['name'=> $fabricante->name]) }}">{{$fabricante->name}}</a></li>
                         @endforeach
-                        <li><a href="{{ route('fabricantes') }}">ver todos</a></li>
+                        <li><a href="{{ route('fabricantes') }}">Ver todos</a></li>
 					</ul>
 				 </div><!-- /.navbar-collapse -->
 			</nav>
